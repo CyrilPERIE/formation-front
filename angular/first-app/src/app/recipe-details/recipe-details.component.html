@@ -1,0 +1,24 @@
+<mat-card class="example-card">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{recipe.name}}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image [src]="recipe.picture" alt="recipe.name">
+    <mat-card-content>
+        <p>
+            {{recipe.description}}
+        </p>
+        <ul>
+            <li *ngFor="let ingredient of recipe.ingredients">
+                {{ingredient.ingredient.name}}
+                {{ingredient.quantity}}
+                {{ingredient.unit}}
+            </li>
+        </ul>
+        <ol>
+            <li *ngFor="let instruction of recipe.instructions">
+                {{instruction}}
+            </li>
+        </ol>
+    </mat-card-content>
+</mat-card>
