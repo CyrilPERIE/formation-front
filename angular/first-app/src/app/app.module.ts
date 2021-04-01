@@ -9,6 +9,9 @@ import { MatCardModule } from '@angular/material/card'
 import { CustomMaterialModule } from './custom-material/custom-material.module';
 import { AppRoutingModule } from './routing/app-routing.module';
 import { RecipeDetailsComponent } from './recipe-details/recipe-details.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDividerModule } from '@angular/material/divider';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +25,9 @@ import { RecipeDetailsComponent } from './recipe-details/recipe-details.componen
     BrowserModule,
     MatCardModule,
     CustomMaterialModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatButtonModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
