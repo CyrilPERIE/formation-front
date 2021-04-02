@@ -1,29 +1,23 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { MOCK_RECIPES } from 'src/assets/recipes.mock';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { Recipe } from '../model/recipe.model';
-import { trigger, state, style, transition, animate } from '@angular/animations';
+import { RecipeService } from '../service/recipe.service';
+
 
 
 @Component({
   selector: 'app-recipe',
   templateUrl: './recipe.component.html',
-  styleUrls: ['../app.component.scss', './recipe.component.scss'],
-  animations: [
-    trigger('bodyExpansion', [
-      state('collapsed, void', style({ height: '0px', visibility: 'hidden' })),
-      state('expanded', style({ height: '*', visibility: 'visible' })),
-      transition('expanded <=> collapsed, void => collapsed',
-        animate('225ms cubic-bezier(0.4, 0.0, 0.2, 1)')),
-    ])
-  ]
+  styleUrls: ['../app.component.scss', './recipe.component.scss']
 })
 export class RecipeComponent implements OnInit {
   @Input()
-  recipe: Recipe = MOCK_RECIPES[1];
+  recipe: Recipe;
   bool: boolean = false;
   textButton = 'See more';
+  @Output()
+  eventToParent = new EventEmitter<number>();
 
-  constructor() { }
+  constructor(private recipeService: RecipeService) { }
 
   ngOnInit(): void {
 
@@ -32,6 +26,11 @@ export class RecipeComponent implements OnInit {
   toggleExpand() {
     this.bool = !this.bool;
     this.bool ? this.textButton = 'See less' : this.textButton = 'See more';
+  }
+
+  delete() {
+    this.recipeService.deleteRecipe(this.recipe.id);
+    this.eventToParent.emit(this.recipe.id)
   }
 
 }

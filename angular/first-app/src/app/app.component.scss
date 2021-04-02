@@ -1,3 +1,6 @@
+body {
+    background-color: rgb(209, 209, 209);
+}
 .example-card {
     max-width: 350px;
     background-color: rgb(209, 209, 209);
@@ -16,9 +19,6 @@
     font-weight: bold;
 }
 
-body {
-    background-color: rgb(209, 209, 209);
-}
 
 button {
     margin-left: 15px;
@@ -30,11 +30,12 @@ button {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 12px;
     border: 2px solid #4CAF50;
+    font-family: 'Courier New', monospace;
 }
 
-.button:hover {
+button:hover {
     background-color: white;
     color: #4CAF50;
     border: 2px solid #4CAF50;
