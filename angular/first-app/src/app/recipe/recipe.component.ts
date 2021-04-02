@@ -2,8 +2,6 @@ import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { Recipe } from '../model/recipe.model';
 import { RecipeService } from '../service/recipe.service';
 
-
-
 @Component({
   selector: 'app-recipe',
   templateUrl: './recipe.component.html',
@@ -26,11 +24,6 @@ export class RecipeComponent implements OnInit {
   toggleExpand() {
     this.bool = !this.bool;
     this.bool ? this.textButton = 'See less' : this.textButton = 'See more';
-  }
-
-  delete() {
-    this.recipeService.deleteRecipe(this.recipe.id);
-    this.eventToParent.emit(this.recipe.id)
   }
 
 }
