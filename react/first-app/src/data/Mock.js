@@ -9,17 +9,29 @@ export const MOCK = [
       The combination of sweet, sour and spirit is refreshingly tangy and perfect for any occasion.`,
         ingredients: [
             {
-                name: 'Dark rum (Appleton Estate Reserve)',
+                id: 0,
+                ingredient: {
+                    id: 0,
+                    name: 'Dark rum (Appleton Estate Reserve)',
+                },
                 quantity: 2,
                 unit: 'oz'
             },
             {
-                name: 'Fresh lime juice',
+                id: 1,
+                ingredient: {
+                    id: 1,
+                    name: 'Fresh lime juice',
+                },
                 quantity: 1,
                 unit: 'oz'
             },
             {
-                name: 'Simple sirup',
+                id: 2,
+                ingredient: {
+                    id: 2,
+                    name: 'Simple sirup',
+                },
                 quantity: 1,
                 unit: 'oz'
             }
@@ -40,17 +52,29 @@ export const MOCK = [
       This classic recipe will transport you to paradise. Getting caught in the rain is not required.`,
         ingredients: [
             {
-                name: 'Light or gold rum',
+                id: 0,
+                ingredient: {
+                    id: 3,
+                    name: 'Light or gold rum',
+                },
                 quantity: 1.5,
                 unit: 'oz'
             },
             {
-                name: 'Coconut milk',
+                id: 1,
+                ingredient: {
+                    id: 4,
+                    name: 'Coconut milk',
+                },
                 quantity: 2,
                 unit: 'oz'
             },
             {
-                name: 'Fresh pineapple juice',
+                id: 2,
+                ingredient: {
+                    id: 5,
+                    name: 'Fresh pineapple juice',
+                },
                 quantity: 2,
                 unit: 'oz'
             }
@@ -71,26 +95,47 @@ export const MOCK = [
       Cuba and the 16th-century Cuban cocktail El Draque, named for Sir Francis Drake. `,
         ingredients: [
             {
-                name: 'Mint leaves',
-                quantity: 6
+                id: 0,
+                ingredient: {
+                    id: 6,
+                    name: 'Mint leaves',
+                },
+                quantity: 6,
+                unit: 'pc'
             },
             {
-                name: 'Simple syrup',
+                id: 1,
+                ingredient: {
+                    id: 2,
+                    name: 'Simple syrup',
+                },
                 quantity: 0.75,
                 unit: 'oz'
             },
             {
-                name: 'Fresh lime juice',
+                id: 2,
+                ingredient: {
+                    id: 1,
+                    name: 'Fresh lime juice',
+                },
                 quantity: 0.75,
                 unit: 'oz'
             },
             {
-                name: 'White rum',
+                id: 3,
+                ingredient: {
+                    id: 7,
+                    name: 'White rum',
+                },
                 quantity: 1.5,
                 unit: 'oz'
             },
             {
-                name: 'Club soda',
+                id: 4,
+                ingredient: {
+                    id: 8,
+                    name: 'Club soda',
+                },
                 quantity: 1.5,
                 unit: 'oz'
             }
@@ -111,17 +156,29 @@ export const MOCK = [
             'A dash of olive brine brings a salty, savory note to the all-time classic.',
         ingredients: [
             {
-                name: 'Gin or vodka',
+                id: 0,
+                ingredient: {
+                    id: 9,
+                    name: 'Gin or vodka',
+                },
                 quantity: 2.5,
                 unit: 'oz'
             },
             {
-                name: 'Dry vermouth',
+                id: 1,
+                ingredient: {
+                    id: 10,
+                    name: 'Dry vermouth',
+                },
                 quantity: 0.5,
                 unit: 'oz'
             },
             {
-                name: 'Olive brine',
+                id: 2,
+                ingredient: {
+                    id: 11,
+                    name: 'Olive brine',
+                },
                 quantity: 0.5,
                 unit: 'oz'
             }
@@ -138,26 +195,40 @@ export const MOCK = [
         picture:
             'https://img.cuisine-etudiant.fr/image/recette/800500/0c0bff3f661a8da9933e74c36996f07c98cabbf3-vodka-citronnade.jpg',
         description:
-        'The acidity of the lemon and the strength of the vodka will reinforce the bland aspect of the taste of water.',
+            'The acidity of the lemon and the strength of the vodka will reinforce the bland aspect of the taste of water.',
         ingredients: [
             {
-                name: 'Vodka',
+                id: 0,
+                ingredient: {
+                    id: 12,
+                    name: 'Vodka',
+                },
                 quantity: 15,
                 unit: 'cL'
             },
             {
-                name: 'Lemon Syrup',
+                id: 1,
+                ingredient: {
+                    id: 13,
+                    name: 'Lemon Syrup',
+                },
                 quantity: 5,
                 unit: 'cL'
             },
             {
-                name: 'Water',
+                id: 2,
+                ingredient: {
+                    id: 14,
+                    name: 'Water',
+                },
                 quantity: 12,
                 unit: 'cL'
             }
         ],
         instructions: [
-            'Add all the ingredients.'
+            'Add all the ingredients to a mixing glass filled with ice.',
+            'Stir, and strain into a chilled cocktail glass.',
+            'Garnish with 2 olives.'
         ]
     }
 ];

@@ -5,13 +5,13 @@ import './header.css'
 function Header() {
 
     return (
-  
-        <div class="header">
-        <p>Cocktail</p>
-        <button routerLink="/recipes/add">Add Cocktail</button>
-    </div>
-  
+
+        <div className="header">
+            <p>Cocktail</p>
+            <button>Add Cocktail</button>
+        </div>
+
     );
-  }
-  
-  export default Header;
+}
+
+export default Header;
