@@ -1,6 +1,11 @@
 <template>
   <div class="header">
     <p>Vue</p>
+    <div class="exo">
+      <router-link to="/exo1" tag="button">Test 1</router-link>
+      <router-link to="/exo2" tag="button">Test 2</router-link>
+      <router-link to="/exo3" tag="button">Test 3</router-link>
+    </div>
   </div>
 </template>
 

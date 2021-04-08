@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="exo">
     <h1>Test 3</h1>
 
     <p>Name :</p>

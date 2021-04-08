@@ -1,19 +1,7 @@
 <template>
   <body>
     <Header />
-    <Home />
-
-    <div class="exo">
-      <Exo1 msg="Exo 1!" />
-    </div>
-
-    <div class="exo">
-      <Exo2 msg="Exo 2!" />
-    </div>
-    
-    <div class="exo">
-      <Exo3 msg="Exo 3!" />
-    </div>
+    <router-view />
     <Footer />
   </body>
 </template>
@@ -21,20 +9,12 @@
 <script>
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
-import Exo1 from "./components/Exo1.vue";
-import Exo2 from "./components/Exo2.vue";
-import Exo3 from "./components/Exo3.vue";
-import Home from "./components/Home";
 
 export default {
   name: "App",
   components: {
     Header,
     Footer,
-    Exo1,
-    Exo2,
-    Exo3,
-    Home,
   },
 };
 </script>

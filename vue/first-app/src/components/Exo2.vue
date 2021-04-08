@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="exo">
     <h1>Test 2</h1>
     <input v-model="search" type="text" />
     <button @click="addElem">Add</button>

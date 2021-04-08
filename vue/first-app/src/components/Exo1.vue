@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="exo">
     <h1>Test 1</h1>
     <p v-if="!show">{{ counter }}</p>
     <br v-if="show"/>

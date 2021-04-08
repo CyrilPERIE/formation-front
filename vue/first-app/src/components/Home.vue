@@ -1,9 +1,6 @@
 <template>
-  <div>
-    <button>Test 1</button>
-    <button>Test 2</button>
-    <button>Test 3</button>
-  </div>
+    <div>
+    </div>
 </template>
 
 <script>
